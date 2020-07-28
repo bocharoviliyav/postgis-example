@@ -10,6 +10,6 @@ import java.util.List;
 
 public interface AirportsRepo extends JpaRepository<Airports,String> {
 
-  @Query(value = "select * from public.airports a where ST_Within(a.geog, Geography(ST_Transform(:window ,4326))) = true",nativeQuery = true)
+  @Query(value = "select * from public.airports a where ST_DWithin(a.geog, Geography(ST_Transform(:window ,4326)), 1.0,true) = true",nativeQuery = true)
   List<Airports> getAirportsByDelta(Polygon window);
 }
