@@ -2,7 +2,6 @@ package io.github.bocharoviliyav.gis.model;
 
 
 import org.locationtech.jts.geom.Geometry;
-import org.locationtech.jts.geom.Point;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,7 +32,7 @@ public class Test implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Test test = (Test) o;
-        return Objects.equals(id, test.id) && Objects.equals(name, test.name)  && Objects.equals(geog, test.geog);
+        return Objects.equals(id, test.id) && Objects.equals(name, test.name) && Objects.equals(geog, test.geog);
     }
 
     @Override

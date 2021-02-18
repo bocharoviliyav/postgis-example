@@ -2,7 +2,6 @@ package io.github.bocharoviliyav.gis.repo;
 
 import io.github.bocharoviliyav.gis.model.Test;
 import org.locationtech.jts.geom.Point;
-import org.locationtech.jts.geom.Polygon;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

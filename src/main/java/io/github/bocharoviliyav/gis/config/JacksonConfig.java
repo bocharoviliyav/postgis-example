@@ -11,13 +11,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JacksonConfig {
 
-  /**
-   * Jts module bean.
-   *
-   * @return the jts module
-   */
-  @Bean
-  public JtsModule jtsModule() {
-    return new JtsModule();
-  }
+    /**
+     * Jts module bean.
+     *
+     * @return the jts module
+     */
+    @Bean
+    public JtsModule jtsModule() {
+        return new JtsModule();
+    }
 }
